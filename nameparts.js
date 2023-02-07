@@ -6,7 +6,12 @@
 // Console.log the three variables at the very end of your code.
 
 const name = "Peter Heronimous Lind";
-let firstName;
-let middleName;
-let lastName;
 
+
+let firstName = name.substring(0, name.indexOf(" "));
+let middleName = name.substring(name.indexOf(" ") + 1, name.indexOf(" ", name.indexOf(" ") + 1));
+let lastName = name.substring(name.indexOf(" ", name.indexOf(" ")+ 1)+1);
+
+console.log(firstName);
+console.log(middleName);
+console.log(lastName);
